@@ -48,11 +48,6 @@ search the website with our regular or advance search options.
 5. Feel free to make a few recipes to help populate the database on your personal machine. You should have access to all features of the application now that you have recipes to interact with.
 
 ### Features
->#### Sean Feuerhelm Features
->* CRUD operations: In order to interact with your data, the application allows users to perform CRUD operations in a user-friendly way. Simply Use the Create Recipe form to CREATE recipes. Once they are added to the database, user's have the option to EDIT and DELETE their recipes while viewing them. The DELETE feature is a soft-delete feature, meaning admins will be the only users who can fully delete data.
->* Serving Size Conversion: While viewing a recipe, it's original serving size and portions are initially displayed. However, while viewing the recipe, the user may choose to change the serving/portion size of the recipe. They simply have to change the portion number and hit "convert" and all the ingredients will scale along with the serving size.
-   > </br> Github: https://github.com/ParmaSeanCheese
-
 >#### Paul Jackson Features
 >* Spring Security with OAuth2: Implemented OAuth2 for user creation and log in with tokens from Google and Github.
 >* User Login and Registration: Users can create an account and log in to save data to their account.
@@ -61,16 +56,20 @@ search the website with our regular or advance search options.
 >* Controller Services: A service to return one of three user types. Another service to return recipe information.
    > </br> Github: https://github.com/paul-jackson-dev
 
->#### Kelsey Jungermann Features
-> *
+>#### Sean Feuerhelm Features
+>* CRUD operations: In order to interact with your data, the application allows users to perform CRUD operations in a user-friendly way. Simply Use the Create Recipe form to CREATE recipes. Once they are added to the database, user's have the option to EDIT and DELETE their recipes while viewing them. The DELETE feature is a soft-delete feature, meaning admins will be the only users who can fully delete data.
+>* Serving Size Conversion: While viewing a recipe, it's original serving size and portions are initially displayed. However, while viewing the recipe, the user may choose to change the serving/portion size of the recipe. They simply have to change the portion number and hit "convert" and all the ingredients will scale along with the serving size.
+   > </br> Github: https://github.com/ParmaSeanCheese
+
+>#### Kelsey Jungermann - Contributed
 > Github: https://github.com/kdj275
 
->#### Max Wingate Features
+>#### Max Wingate - Contributed
 > Github: https://github.com/Noobwastaken99
 
->#### Jennifer Kelly Features
-> Github:https://github.com/jenbilyeu80
-
+>#### Jennifer Kelly - Contributed
+> Github: https://github.com/jenbilyeu80
+ 
 
 ### Screenshots
 #### Homepage
