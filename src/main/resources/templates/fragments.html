@@ -32,7 +32,10 @@
                         <a class="nav-link" href="/recipe/create">Add Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/login">Log In</a>
+                    </li>
+                    <li class="nav-item" th:if="${user}">
+                        <a class="nav-link" href="/logout">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -56,19 +59,13 @@
     <ul class="list-inline sidebar-list">
         <li class="list-inline-item text-center sidebar-list-item">
             <a class="sidebar-link" href="/profile/favorites">Favorites</a>
-        </li>
+        </li></br>
         <li class="list-inline-item sidebar-list-item">
             <a class="sidebar-link" href="/profile/myRecipes">My Recipes</a>
-        </li>
+        </li></br>
         <li class="list-inline-item sidebar-list-item">
             <a class="sidebar-link" href="/profile/menu">Menu</a>
-        </li>
-        <li class="list-inline-item sidebar-list-item">
-            <a class="sidebar-link" href="/profile/groceryList">Grocery List</a>
-        </li>
-        <li class="list-inline-item sidebar-list-item">
-            <a class="sidebar-link" href="/profile/changePassword">Change Password</a>
-        </li>
+        </li></br>
     </ul>
 </div>
 

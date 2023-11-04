@@ -18,7 +18,6 @@ import java.util.Collection;
 import static com.launchcode.recipeproject.controllers.ListController.columnChoices;
 
 
-//Copied everything over from 4techjobs
 @Controller
 @RequestMapping("")
 public class SearchController {

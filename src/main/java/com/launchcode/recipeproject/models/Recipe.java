@@ -13,9 +13,6 @@ import java.util.Arrays;
 import java.util.List;
 
 
-/**
- * Created by Sean Feuerhelm
- */
 
 @Entity
 @SQLDelete(sql = "UPDATE recipe SET deleted = true WHERE id=?")

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+
+<body>
+<!--<h1 th:text="${title}"></h1>-->
+
+<!--<nav th:replace="fragments :: navigation"></nav>-->
+
+<header th:replace="fragments :: header"></header>
+<h1 th:text="${title}"></h1>
+<div id="top9container" class="home-middle">
+  <th:block th:each="recipe, iter : ${viewAll}">
+    <div class="top9element">
+      <div class="top9inner">
+        <a th:href="@{'/recipe/view/' + ${recipe.getId()}}"><img th:if="${recipe.imagePath}" th:src="@{${recipe.imagePath}}"></a>
+        <a th:href="@{'/recipe/view/' + ${recipe.getId()}}"><h3 th:text="${recipe.name}">Recipe Title</h3></a>
+        <label>Serves:&nbsp;</label><label th:text="${recipe.portionNum}"></label>
+        <br>
+        <div th:replace="fragments :: rating"></div>
+        <br>
+      </div>
+    </div>
+  </th:block>
+</div>
+
+<div th:replace="fragments :: sidebar"></div>
+
+
+</body>
+</html>

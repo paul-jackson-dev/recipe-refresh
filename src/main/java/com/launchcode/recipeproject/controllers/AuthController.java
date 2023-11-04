@@ -62,7 +62,7 @@ public class AuthController {
                 response.addCookie(cookie);
             }
         }
-        model.addAttribute("title", "Login!");
+        model.addAttribute("title", "Log In!");
         return "login";
     }
 

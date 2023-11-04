@@ -34,6 +34,13 @@ public class HomeController {
         model.addAttribute("user", controllerServices.getUser(principal));
         return "index";
     }
+    @GetMapping("viewAll")
+    public String displayViewAll(Model model, Principal principal){
+        model.addAttribute("title", "Recipe Refresh");
+        model.addAttribute("viewAll", recipeRepository.findAll());
+        model.addAttribute("user", controllerServices.getUser(principal));
+        return "viewAll";
+    }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')") // example of method level security. must add ROLE_USER,ROLE_ADMIN manually in db
     @GetMapping("/admin")

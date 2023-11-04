@@ -1,0 +1,17 @@
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" xmlns="http://www.w3.org/1999/html">
+<head th:replace="fragments :: head">
+</head>
+<body>
+<header>
+  <nav th:replace="fragments :: header"></nav>
+  <div th:replace="fragments :: sidebar"></div>
+</header>
+<div class="mainBody">
+
+  <h1 id="myRecipesTitle" class="text-center display-6 p-3">Welcome, <span th:text="${user.getUsername()}"></span>!</h1>
+  <div class="container">
+
+  </div>
+</div>
+</body>
+</html>

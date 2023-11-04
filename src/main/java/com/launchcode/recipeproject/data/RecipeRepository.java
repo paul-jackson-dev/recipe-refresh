@@ -17,4 +17,5 @@ public interface RecipeRepository extends CrudRepository<Recipe, Integer> {
     Optional<Recipe> findById(Integer id);
 
     List<Recipe> findByUserId(Integer id);
+    List<Recipe> findAll();
 }

@@ -7,9 +7,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-/**
- * Created by Sean Feuerhelm
- */
 
 @Entity
 public class Ingredient extends AbstractEntity{

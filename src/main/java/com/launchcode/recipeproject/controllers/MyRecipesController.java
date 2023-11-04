@@ -21,13 +21,26 @@ public class MyRecipesController {
     @GetMapping("/profile/myRecipes")
     public String displayMyRecipes(Model model, Principal principal){
         User user = controllerServices.getUser(principal);
-        if (user == null) {
-            model.addAttribute("title", "login");
-            return "/login";
-        }
+//        if (user == null) {
+//            model.addAttribute("title", "login");
+//            return "/login";
+//        }
         int userId = user.getId();
         model.addAttribute("recipes", recipeRepository.findByUserId(userId));
         return "/profile/myRecipes";
+    }
+
+    @GetMapping("/profile")
+    public String displayProfile(Model model, Principal principal){
+        User user = controllerServices.getUser(principal);
+//        if (user == null) {
+//            model.addAttribute("title", "login");
+//            return "/login";
+//        }
+        int userId = user.getId();
+
+        model.addAttribute("user", user);
+        return "/profile/profile";
     }
 }
 
